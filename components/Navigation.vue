@@ -4,7 +4,7 @@
       <nav>
         <ul role="menu">
           <li v-for="(navItem, index) in books" :key="index">
-            <nuxt-link :to="'/' + navItem.fields.writer.trim()" role="menuitem">{{navItem.fields.title}}</nuxt-link>
+            <nuxt-link :to="'/' + navItem.fields.bookId" role="menuitem">{{navItem.fields.title}}</nuxt-link>
           </li>
         </ul>
       </nav>
